@@ -1,0 +1,16 @@
+﻿<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <recipes-item 
+            ng-repeat="recipe in $ctrl.recipes"
+            recipe="recipe"
+            index="{{$index}}"
+        ></recipes-item>
+    </div>
+</div>
+
